@@ -65,7 +65,7 @@ class MyApp extends StatelessWidget {
         ]),
         bottomNavigationBar: BottomNavigationBar(
             showUnselectedLabels: true,
-            currentIndex: 1,
+            currentIndex: 3,
             items: <BottomNavigationBarItem>[
               BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
               BottomNavigationBarItem(
@@ -75,9 +75,11 @@ class MyApp extends StatelessWidget {
               BottomNavigationBarItem(
                   icon: Icon(Icons.favorite),
                   label: 'Favorites',
-                  backgroundColor: const Color.fromARGB(255, 20, 234, 166)),
+                  backgroundColor: const Color.fromARGB(255, 176, 25, 25)),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.settings), label: 'Settings')
+                  icon: Icon(Icons.settings),
+                  label: 'Settings',
+                  backgroundColor: const Color.fromARGB(255, 0, 0, 0))
             ]),
       ),
     );
