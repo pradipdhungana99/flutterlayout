@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: const Color.fromARGB(255, 52, 52, 52),
         appBar: AppBar(
+          backgroundColor: Colors.black,
           elevation: 0,
           title: Text(
             'NEXTHOUR',
@@ -29,7 +30,64 @@ class MyApp extends StatelessWidget {
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
                 fontStyle: FontStyle.italic,
-                color: Colors.amber),
+                color: const Color.fromARGB(255, 254, 191, 1)),
+          ),
+        ),
+        drawer: Drawer(
+          child: Column(
+            children: [
+              DrawerHeader(
+                  child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Row(
+                    children: [
+                      Icon(Icons.home),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text('Home'),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Icon(Icons.movie),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text('MyMovies')
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Icon(Icons.settings),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text('Settings')
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Icon(Icons.favorite),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text('Favorite'),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Icon(Icons.tv_sharp),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text('TvShows'),
+                    ],
+                  ),
+                ],
+              ))
+            ],
           ),
         ),
         body: ListView(children: [
