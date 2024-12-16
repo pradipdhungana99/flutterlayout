@@ -34,6 +34,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
         drawer: Drawer(
+          backgroundColor: const Color.fromARGB(255, 202, 236, 252),
           child: Column(
             children: [
               DrawerHeader(
