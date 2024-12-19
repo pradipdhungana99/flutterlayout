@@ -29,16 +29,26 @@ class MyTitles extends StatelessWidget {
               )
             ],
           ),
-          Text(
-            'MOVIES',
-            style: TextStyle(
-              color: Colors.white,
+          GestureDetector(
+            onTap: () {
+              Navigator.pushNamed(context, '/secondpage');
+            },
+            child: Text(
+              'MOVIES',
+              style: TextStyle(
+                color: Colors.white,
+              ),
             ),
           ),
-          Text(
-            'TV SHOWS',
-            style: TextStyle(
-              color: Colors.white,
+          OutlinedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/secondpage');
+            },
+            child: Text(
+              'TV SHOWS',
+              style: TextStyle(
+                color: Colors.white,
+              ),
             ),
           ),
         ]),

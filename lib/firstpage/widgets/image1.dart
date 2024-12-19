@@ -15,11 +15,16 @@ class MyImage extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: images.length,
         itemBuilder: (context, index) {
-          return Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Image.network(
-              images[index],
-              fit: BoxFit.cover,
+          return InkWell(
+            onTap: () {
+              Navigator.pushNamed(context, '/secondpage');
+            },
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image.network(
+                images[index],
+                fit: BoxFit.cover,
+              ),
             ),
           );
         },
